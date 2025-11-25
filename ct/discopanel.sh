@@ -19,8 +19,6 @@ variables
 color
 catch_errors
 
-msg_info "Starting ${APP} Setup"
-
 # Auto-update disabled
 function update_script() {
   msg_error "Auto-update is not supported for ${APP}."
