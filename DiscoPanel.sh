@@ -3,9 +3,9 @@ source <(curl -fsSL https://raw.githubusercontent.com/community-scripts/ProxmoxV
 # Copyright (c) 2021-2025 community-scripts ORG
 # Author: DragoQC
 # License: MIT | https://github.com/community-scripts/ProxmoxVE/raw/main/LICENSE
-# Source: [SOURCE_URL]
+# Source: https://github.com/DragoQC/DiscoPanel-PVEHS/blob/main/DiscoPanel.sh
 
-APP="Discopanel"
+APP="DiscoPanel"
 var_tags="${var_tags:-minecraft;panel}"
 var_cpu="${var_cpu:-4}"
 var_ram="${var_ram:-20480}"
