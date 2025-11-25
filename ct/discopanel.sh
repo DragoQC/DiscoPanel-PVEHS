@@ -3,7 +3,7 @@ source <(curl -fsSL https://raw.githubusercontent.com/community-scripts/ProxmoxV
 # Copyright (c) 2021-2025 community-scripts ORG
 # Author: DragoQC
 # License: MIT | https://github.com/community-scripts/ProxmoxVE/raw/main/LICENSE
-# Source: https://github.com/DragoQC/DiscoPanel-PVEHS/blob/main/DiscoPanel.sh
+# Source: https://github.com/DragoQC/DiscoPanel-PVEHS/blob/main/discopanel.sh
 
 APP="DiscoPanel"
 var_tags="${var_tags:-minecraft;panel}"
@@ -13,12 +13,13 @@ var_disk="${var_disk:-20}"
 var_os="${var_os:-debian}"
 var_version="${var_version:-13}"
 var_unprivileged="${var_unprivileged:-1}"
-var_install="discopanel-install"
 
 header_info "$APP"
 variables
 color
 catch_errors
+
+msg_info "Starting ${APP} Setup"
 
 # Auto-update disabled
 function update_script() {
